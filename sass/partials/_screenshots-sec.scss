@@ -1,0 +1,28 @@
+.screenshots-sec{
+	padding: 5rem 0;
+	background-image: url("../images/cta-bg.png") , linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+	background-repeat: no-repeat;
+	background-position: top center;
+	.sec-title{
+		margin-bottom: 60px;
+		text-align: center;
+		img{
+			margin-bottom: 25px;
+			width: 5%;
+		}
+		h2{
+			position: relative;
+			color: #fff;
+			font-size: 36px;
+			font-weight: 500;
+			line-height: 1.4em;
+		}
+		p{
+			position: relative;
+			margin-top: 28px;
+			color: #fff;
+			font-size: 17px;
+			line-height: 1.9em;
+		}
+	}
+}

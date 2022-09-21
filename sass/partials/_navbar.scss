@@ -1,0 +1,86 @@
+.navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 9;
+    min-height: 80px;
+    z-index: 999;
+    padding: 0 auto;
+    .logo{
+        padding: 15px 0;
+        width: 120px;
+        font-size: 32px;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    &.nav-scroll {
+        background: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        transition: transform .5s;
+        transition: transform .5s;
+        transform: translateY(100px);
+        .logo{
+            font-size: 32px;
+            color: #282828;
+        }
+        .icon-bar{
+            color: #222;
+        }
+        .nav-link{
+            color: #222 !important;
+        }
+    }
+    button{
+        outline: 0;
+        .icon-bar{
+            color: #fff;
+            font-size: 20px;
+            transition: all .3s;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            font-size: 15px;
+            font-weight: 600;
+            color: #eee;
+            letter-spacing: .5px;
+            margin: 15px 5px;
+            transition: all .5s;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        .active{
+            color: $primary-color !important;
+        }
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar .navbar-collapse {
+        max-height: 340px;
+        overflow: auto;
+        background: #111;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .navbar .nav-link {
+        margin: 10px auto !important;
+    }
+
+    .nav-scroll .navbar-collapse .nav-link {
+        color: #fff !important;
+    }
+    .nav-scroll .navbar-collapse .active {
+        color: $primary-color !important;
+    }
+}

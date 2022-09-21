@@ -1,0 +1,128 @@
+.testimonial-sec{
+	padding: 90px 0px 60px;
+	.sec-title{
+		margin-bottom: 60px;
+		text-align: center;
+		img{
+			margin-bottom: 25px;
+			width: 5%;
+		}
+		h2{
+			position: relative;
+			color: #1b3452;
+			font-size: 36px;
+			font-weight: 500;
+			line-height: 1.4em;
+		}
+		p{
+			position: relative;
+			margin-top: 28px;
+			color: #444444;
+			font-size: 17px;
+			line-height: 1.9em;
+		}
+	}
+	.single-testimonial{
+		position: relative;
+		i{
+			position: absolute;
+		    left: 35px;
+		    top: -15px;
+		    z-index: 9999;
+		    font-size: 40px;
+		    line-height: 40px;
+		    background: linear-gradient(to top, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		}
+		.content{
+			margin-top: 20px;
+		    background: #fff;
+		    border: 1px solid #f9f9f9;
+		    box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+		    border-radius: 4px;
+		    padding: 50px;
+		    margin-bottom: 2.5rem;
+		    position: relative;
+		    &::after{
+		    	content: "";
+		    	position: absolute;
+		    	height: 27px;
+		    	width: 27px;
+		    	bottom: -15px;
+		    	left: 33px;
+		    	background: #fff;
+		    	border-radius: 2px;
+		    	transform: translateX(-50%) rotate(45deg);
+		    	border-bottom: 1px solid #ddd;
+		    	border-right: 1px solid #ddd;
+		    }
+			p{
+				font-size: 15px;
+			}
+		}
+		.author{
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			img{
+				width: 66px !important;
+				height: 66px;
+				border-radius: 100px;
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 66px;
+				flex: 0 0 66px;
+				-webkit-box-shadow: 0 1px 2px rgba(212, 212, 212, 0.35);
+				box-shadow: 0 1px 2px rgba(212, 212, 212, 0.35);
+				display: inline-block;
+				float: left;
+				margin-right: 15px;
+			}
+			.author-info{
+				h6{
+					font-size: 18px;
+					line-height: 23px;
+					font-weight: 600;
+					margin: 0 0 10px;
+					padding: 0;
+					color: #2c3e50;
+					margin-bottom: 0;
+				}
+				span{
+
+				}
+			}
+		}
+	}
+	.owl-nav{
+		position: absolute;
+		right: 0;
+		margin-top: 0;
+		bottom: 15px;
+		.owl-prev{
+			background: rgba(40, 20, 131, 0.05) !important;
+			line-height: 30px;
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			outline: 0;
+			transition: all .3s;
+			&:hover{
+				background-color: $secondary-color !important;
+			}
+		}
+		.owl-next{
+			background: rgba(40, 20, 131, 0.05) !important;
+			line-height: 30px;
+			display: inline-block;
+			height: 30px;
+			width: 30px;
+			outline: 0;
+			transition: all .3s;
+			&:hover{
+				background-color: $secondary-color !important;
+			}
+		}
+	}
+}

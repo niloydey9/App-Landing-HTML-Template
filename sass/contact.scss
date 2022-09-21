@@ -1,0 +1,250 @@
+/************************* Global style Start *************************/
+@import "partials/variable";
+@import "partials/init";
+
+/************************* Navbar Section *************************/
+@import "partials/navbar";
+
+/************************* Single Header Section *************************/
+@import "partials/single-header";
+
+/************************* contact Section *************************/
+.contact-section{
+	padding: 5rem 0;
+	.contact-body{
+		h1{
+			font-size: 30px;
+			position: relative;
+			font-family: "Poppins", sans-serif;
+			line-height: 55px;
+			font-weight: 700;
+			margin-bottom: 50px;
+			padding-bottom: 15px;
+			span{
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-image: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+			}
+			&::before{
+				position: absolute;
+			    content: '';
+			    left: 0;
+			    bottom: -5px;
+			    width: 30px;
+			    height: 2px;
+			    background-color: $secondary-color;
+			    transition: all 0.3s ease;
+			}
+			&::after{
+				position: absolute;
+				content: '';
+				left: 0;
+				bottom: 2px;
+				width: 15px;
+				height: 2px;
+				background-color: $secondary-color;
+				transition: all 0.3s ease;
+			}
+		}
+		form{
+			label{
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: .5px;
+			}
+			input{
+				padding: 0 20px;
+				line-height: 50px;
+				width: 100%;
+				border: 0;
+				margin-bottom: 30px;
+				background: #ffffff;
+				color: #252525;
+				border: 1px solid #eeeeee;
+				transition: all .3s;
+				min-height: 45px;
+				border-radius: 0;
+				&:focus{
+					border: 1px solid $secondary-color;
+					box-shadow: none;
+				}
+			}
+			textarea{
+				height: 150px;
+			    padding: 20px;
+			    width: 100%;
+			    border: 0;
+			    color: #9c9c9c;
+			    resize: none;
+			    background-color: #fff;
+			    border: 1px solid #eeeeee;
+			    margin-bottom: 26px;
+			    transition: all .3s;
+			    border-radius: 0;
+			    &:focus{
+			    	border: 1px solid $primary-color;
+			    	box-shadow: none;
+			    }
+			}
+			button{
+				display: inline-block;
+				font-size: 10px;
+				color: #fff;
+				padding: 10px 22px;
+				line-height: 24px;
+				overflow: hidden;
+				border-radius: 5px;
+				letter-spacing: 2px;
+				font-weight: 600;
+				background-color: $secondary-color;
+				text-transform: uppercase;
+				text-decoration: none;
+				position: relative;
+				z-index: 1;
+				border: none;
+				outline: 0;
+				&::before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 1;
+					opacity: 0;
+					background-color: $primary-color;
+					transition: all .3s;
+					transform: scale(1, 0.5);
+					z-index: -1;
+				}
+				&:hover{
+					color: #fff;
+				}
+				&:hover::before{
+					opacity: 1;
+					transform: scale(1, 1);
+				}
+			}
+		}
+	}
+	.contact-title{
+		h4{
+			font-size: 30px;
+			position: relative;
+			font-family: "Poppins", sans-serif;
+			line-height: 55px;
+			font-weight: 700;
+			margin-bottom: 50px;
+			padding-bottom: 15px;
+			span{
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-image: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+			}
+			&::before{
+				position: absolute;
+			    content: '';
+			    left: 0;
+			    bottom: -5px;
+			    width: 30px;
+			    height: 2px;
+			    background-color: $secondary-color;
+			    transition: all 0.3s ease;
+			}
+			&::after{
+				position: absolute;
+				content: '';
+				left: 0;
+				bottom: 2px;
+				width: 15px;
+				height: 2px;
+				background-color: $secondary-color;
+				transition: all 0.3s ease;
+			}
+		}
+		p{
+			line-height: 24px;
+			font-size: 16px;
+			margin-bottom: 30px;
+		}
+	}
+	.contact-info{
+		position: relative;
+		list-style-type: none;
+		li{
+			position: relative;
+			color: #252525;
+		    font-size: 16px;
+		    padding-bottom: 20px;
+		    margin-bottom: 23px;
+		    padding-left: 60px;
+		    &::before{
+		    	position: absolute;
+	    	    content: '';
+	    	    left: 0;
+	    	    bottom: 0px;
+	    	    width: 100%;
+	    	    height: 2px;
+	    	    background-color: #ddd;
+	    	    transition: all 0.3s ease;
+		    }
+		    &::after{
+		    	position: absolute;
+	    	    content: '';
+	    	    left: 0;
+	    	    bottom: 0px;
+	    	    width: 50px;
+	    	    height: 2px;
+	    	    background-color: $secondary-color;
+	    	    transition: all 0.3s ease;
+		    }
+		    a{
+		    	text-decoration: none;
+		    	color: #222222;
+		    	i{
+		    		margin-right: 15px;
+		    		display: inline-block;
+		    		color: $secondary-color;
+		    		position: absolute;
+		    		left: 18px;
+		    		top: 10px;
+		    		font-size: 18px;
+		    	}
+		    	b{
+		    		font-weight: 600;
+		    		display: block;
+		    		margin-bottom: 6px;
+		    		font-family: 'Poppins', sans-serif;
+		    	}
+		    }
+		}
+	}
+	.social-icon{
+		li{
+			position: relative;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			display: inline-block;
+			a{
+				position: relative;
+			    width: 40px;
+			    height: 40px;
+			    color: #848484;
+			    font-size: 16px;
+			    line-height: 40px;
+			    text-align: center;
+			    border-radius: 50%;
+			    display: inline-block;
+			    background: #f4f4f4;
+			    transition: all .3s ease;
+				&:hover{
+					background-color: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+/************************* Footer Section *************************/
+@import "partials/footer";

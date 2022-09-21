@@ -1,0 +1,96 @@
+.download-section{
+	background-image: url("../images/download-bac.jpg");
+	margin-top: 110px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+	&::after{
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    content: "";
+	    z-index: -1;
+	    background: linear-gradient(-134deg, #C86DD7 0%, #3023AE 100%);
+	    opacity: .7;
+	}
+	.download-app-img{
+		margin-top: -109px;
+		img{
+			display: block;
+		    max-width: 100%;
+		    height: auto;
+		}
+	}
+	.download-app-text{
+		padding: 100px 0;
+		h3{
+			font-size: 30px;
+			line-height: 35px;
+			font-weight: 600;
+			margin: 0 0 10px;
+			color: #fff;
+		}
+		p{
+			color: #fff;
+			font-size: 14px;
+		}
+		.download-app-button{
+			position: relative;
+			display: block;
+			overflow: hidden;
+			padding-top: 20px;
+			transition: all 0.3s ease-in;
+			.download-btn{
+				border: 1px solid #fff;
+				margin-right: 20px;
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				float: left;
+				padding: 5px 20px;
+				border-radius: 4px;
+				margin-bottom: 10px;
+				text-decoration: none;
+				transition: all .3s;
+				&:hover,
+				&.active {
+					background-color: #fff;
+					p{
+						color: #281483;
+					}
+					i{
+						background: linear-gradient(to bottom, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+				}
+				i{
+					font-size: 28px;
+					line-height: 28px;
+					margin-right: 10px;
+					color: #fff;
+				}
+				p{
+					font-size: 16px;
+					line-height: 20px;
+					margin-bottom: 5px;
+					small{
+						font-size: 12px;
+						line-height: 12px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.download-section .download-app-img {
+	    display: none;
+	}
+}

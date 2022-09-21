@@ -1,0 +1,59 @@
+/************************* Global style Start *************************/
+@import "partials/variable";
+@import "partials/init";
+
+/************************* Navbar Section *************************/
+@import "partials/navbar";
+
+/************************* Banner Section *************************/
+@import "partials/banner-section";
+
+/************************* Client Section *************************/
+.clients-section{
+	position: relative;
+	padding: 70px 0px 70px;
+	.figure{
+		a{
+			img{
+				width: 80% !important;
+				transition: all .3s;
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+		}
+	}
+}
+
+/************************* Services Section *************************/
+@import "partials/services-section";
+
+/************************* App Demo Section *************************/
+@import "partials/app-demo";
+
+/************************* Discover Section *************************/
+@import "partials/discover-sec";
+
+/************************* Download Section *************************/
+@import "partials/download-section";
+
+/************************* Screenshots Section *************************/
+@import "partials/screenshots-sec";
+
+/************************* Testimonial Section *************************/
+@import "partials/testimonial-sec";
+
+/************************* News Section *************************/
+@import "partials/news-sec";
+
+/************************* Single Header Section *************************/
+@import "partials/single-header";
+
+/************************* Pricing Section *************************/
+@import "partials/pricing-sec";
+
+/************************* Video Intro Section *************************/
+@import "partials/video-intro";
+
+/************************* Footer Section *************************/
+@import "partials/footer";
